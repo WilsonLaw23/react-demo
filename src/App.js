@@ -1,5 +1,5 @@
 import './App.css';
-import dogimage from '../src/assets/Dog-image.png';
+import dogimage from '../src/assets/dog-image.png';
 import ButtonWithCount from './components/ButtonWithCount';
 
 export default function App() {
