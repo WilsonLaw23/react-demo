@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { Button } from 'react-bootstrap';
+import AlertDismissible from './AlertDismissible';
 
-const ButtonWithCount = () => {
+const ButtonWithCount = ({ title }) => {
   const [count, setCount] = useState(0);
 
   const handleButtonClick = () => {
@@ -9,8 +11,11 @@ const ButtonWithCount = () => {
 
   return (
     <div>
-      <button onClick={handleButtonClick}>Click me</button>
+      <Button variant="danger" onClick={handleButtonClick}>
+        {title}
+      </Button>
       <p>Count: {count}</p>
+      <AlertDismissible buttonName={title} />
     </div>
   );
 };
