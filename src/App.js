@@ -6,6 +6,7 @@ import 'bootstrap/js/dist/dropdown';
 import dogimage from '../src/assets/dog-image.png';
 import ButtonWithCount from './components/ButtonWithCount';
 import Badge from 'react-bootstrap/Badge';
+import {FormattedMessage} from 'react-intl';
 
 export default function App() {
   const title = 'Dog Page';
@@ -35,6 +36,15 @@ export default function App() {
       <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
     Language
+    <FormattedMessage id="app.text"
+    defaultMessage="Edit <code>src/App.js</code> and save to reload. Now with {what}!"
+    description="Welcome header on app main page"
+    values={{
+       what: 'react-intl',
+       code: chunks => <code>{chunks}</code>
+      }}
+      
+      />
   </button>
   <ul class="dropdown-menu">
     <li><button class="dropdown-item" type="button">en-us</button></li>

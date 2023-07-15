@@ -1,0 +1,6 @@
+{
+    "app.text": {
+      "defaultMessage": "Edit <code>src/App.js</code> and save to reload. Now with <b>{what}</b>!",
+      "description": "Welcome header on app main page"
+    }
+}
