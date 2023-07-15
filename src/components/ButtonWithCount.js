@@ -15,7 +15,7 @@ const ButtonWithCount = ({ title }) => {
         {title}
       </Button>
       <p>Count: {count}</p>
-      <AlertDismissible buttonName={title} />
+      <AlertDismissible buttonName={title} />s{' '}
     </div>
   );
 };
