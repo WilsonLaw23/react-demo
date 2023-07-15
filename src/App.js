@@ -6,7 +6,7 @@ import 'bootstrap/js/dist/dropdown';
 import dogimage from '../src/assets/dog-image.png';
 import ButtonWithCount from './components/ButtonWithCount';
 import Badge from 'react-bootstrap/Badge';
-import {FormattedMessage} from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 
 export default function App() {
   const title = 'Dog Page';
@@ -21,7 +21,9 @@ export default function App() {
       </p>
       <img src={dogimage} alt="cute dog is taking a rest"></img>
       <p>{love}:</p>
-      <h1>Example heading <Badge bg="secondary">Hello</Badge></h1>
+      <h1>
+        Example heading <Badge bg="secondary">Hello</Badge>
+      </h1>
       <ul>
         <li>Treats</li>
         <li>Exercise</li>
@@ -34,27 +36,28 @@ export default function App() {
         <li>Punishment</li>
       </ol>
       <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Language
-    <FormattedMessage id="app.text"
-    defaultMessage="Edit <code>src/App.js</code> and save to reload. Now with {what}!"
-    description="Welcome header on app main page"
-    values={{
-       what: 'react-intl',
-       code: chunks => <code>{chunks}</code>
-      }}
-      
-      />
-  </button>
-  <ul class="dropdown-menu">
-    <li><button class="dropdown-item" type="button">en-us</button></li>
-    <li><button class="dropdown-item" type="button">chinese</button></li>
-  </ul>
-</div>
-      <ButtonWithCount title={title}/>
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <FormattedMessage id="description" />
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <button class="dropdown-item" type="button">
+              en-us
+            </button>
+          </li>
+          <li>
+            <button class="dropdown-item" type="button">
+              chinese
+            </button>
+          </li>
+        </ul>
+      </div>
+      <ButtonWithCount title={title} />
     </div>
-
   );
-  
 }
-
