@@ -1,5 +1,12 @@
 {
-  "app.text": "APP US Test",
-  "defaultMessage": "Edit <code>src/App.js</code> and save to reload. Now with <b>{what}</b>!",
-  "description": "Welcome header on app main page"
+  "title" : "Dog Page",
+  "dlove" : "Things dogs love",
+  "dhate" : "Things dogs hate",
+  "dp" : "dog photos",
+  "l1" : "Treats",
+  "l2" : "Exercise",
+  "l3" : "Playtime",
+  "h1" : "Loud Noise",
+  "h2" : "Abandon",
+  "h3" : "Punishment"
 }

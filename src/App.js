@@ -24,9 +24,6 @@ export default function App() {
       <h1>
         Example heading <Badge bg="secondary">Hello</Badge>
       </h1>
-      <h1>
-        Example heading <Badge bg="secondary">Hello</Badge>
-      </h1>
       <ul>
         <li>Treats</li>
         <li>Exercise</li>
