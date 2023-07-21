@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import 'bootstrap/js/dist/dropdown';
+import { Context } from './wrapper';
 
 const LanguageDropdown = ({ title }) => {
   const [local, setLocal] = useState('en_us');
@@ -9,6 +10,7 @@ const LanguageDropdown = ({ title }) => {
   };
 
   const currentLang = `this page is in ${local}`;
+  const Context = useContext(Context);
 
   return (
     <div className="dropdown">
@@ -34,11 +36,11 @@ const LanguageDropdown = ({ title }) => {
         </li>
         <li>
           <button
-            className={`dropdown-item ${local === 'chinese' ? 'active' : ''}`}
+            className={`dropdown-item ${local === '中文' ? 'active' : ''}`}
             type="button"
-            onClick={() => handleSelect('chinese')}
+            onClick={() => handleSelect('中文')}
           >
-            chinese
+            中文
           </button>
         </li>
       </ul>

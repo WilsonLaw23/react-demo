@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,26 +14,71 @@ export default function App() {
   const hate = 'Things dogs hate';
   return (
     <div className="App">
-      <h1>{title}</h1>
+      <h1>
+        <FormattedMessage
+        id="title"
+        defaultMessage="Dog Page"
+        />
+      </h1>
       <p>
         Click here to view more{''}
         <a href="https://www.pexels.com/search/dog/"> dog photos</a>.
       </p>
       <img src={dogimage} alt="cute dog is taking a rest"></img>
-      <p>{love}:</p>
+      <p>
+        <FormattedMessage
+        id="dlove"
+        defaultMessage="Things dogs love"
+        />
+      </p>
       <h1>
         Example heading <Badge bg="secondary">Hello</Badge>
       </h1>
       <ul>
-        <li>Treats</li>
-        <li>Exercise</li>
-        <li>Playtime</li>
+      <li>
+        <FormattedMessage
+        id="l1"
+        defaultMessage="Treats"
+        />
+      </li>
+      <li>
+        <FormattedMessage
+        id="l2"
+        defaultMessage="Exercise"
+        />
+      </li>
+      <li>
+        <FormattedMessage
+        id="l3"
+        defaultMessage="Playtime"
+        />
+      </li>
       </ul>
-      <p>{hate}:</p>
+      <p>
+        <FormattedMessage
+      id="dhate"
+      defaultMessage="Things dogs hate"
+      />
+      </p>
       <ol>
-        <li>Loud Noise</li>
-        <li>Abandon</li>
-        <li>Punishment</li>
+      <li>
+        <FormattedMessage
+        id="h1"
+        defaultMessage="Loud Noise"
+        />
+      </li>
+      <li>
+        <FormattedMessage
+        id="h2"
+        defaultMessage="Abandon"
+        />
+      </li>
+      <li>
+        <FormattedMessage
+        id="h3"
+        defaultMessage="Punishment"
+        />
+      </li>
       </ol>
       <LanguageDropdown />
       <ButtonWithCount title={title} />

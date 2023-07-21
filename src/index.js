@@ -3,18 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import messages_en_us from './translations/en-US.json';
 import { IntlProvider } from 'react-intl';
+import Wrapper from './components/wrapper';
 
+const local = navigator.language;
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const messages = {
-  'en-US': messages_en_us,
-};
+
+
 root.render(
   <React.StrictMode>
-    <IntlProvider locale={navigator.language} messages={messages[navigator.language]}>
+    <Wrapper>
       <App />
-    </IntlProvider>
+      </Wrapper>
   </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function
