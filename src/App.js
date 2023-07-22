@@ -1,18 +1,17 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import dogimage from '../src/assets/dog-image.png';
 import ButtonWithCount from './components/ButtonWithCount';
 import Badge from 'react-bootstrap/Badge';
-import { FormattedMessage } from 'react-intl';
+import { FormattedMessage, IntlProvider } from 'react-intl';
 import LanguageDropdown from './components/dropdownlist';
 
 export default function App() {
   const title = 'Dog Page';
-  const love = 'Things dogs love';
-  const hate = 'Things dogs hate';
   return (
+    <IntlProvider>
     <div className="App">
       <h1>
         <FormattedMessage
@@ -83,5 +82,6 @@ export default function App() {
       <LanguageDropdown />
       <ButtonWithCount title={title} />
     </div>
+    </IntlProvider>
   );
 }
