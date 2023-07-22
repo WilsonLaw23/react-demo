@@ -11,7 +11,6 @@ import LanguageDropdown from './components/dropdownlist';
 export default function App() {
   const title = 'Dog Page';
   return (
-    <IntlProvider>
     <div className="App">
       <h1>
         <FormattedMessage
@@ -82,6 +81,5 @@ export default function App() {
       <LanguageDropdown />
       <ButtonWithCount title={title} />
     </div>
-    </IntlProvider>
   );
 }
