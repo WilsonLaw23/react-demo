@@ -36,9 +36,9 @@ const LanguageDropdown = ({ title }) => {
           <button
             className={`dropdown-item ${local === 'chinese' ? 'active' : ''}`}
             type="button"
-            onClick={() => handleSelect('chinese')}
+            onClick={() => handleSelect('中文')}
           >
-            chinese
+            中文
           </button>
         </li>
       </ul>
