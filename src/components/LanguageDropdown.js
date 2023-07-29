@@ -33,7 +33,7 @@ const LanguageDropdown = ({ title }) => {
             type="button"
             onClick={() => handleSelect('en-us')}
           >
-            en-us
+            English
           </button>
         </li>
         <li>
@@ -42,7 +42,7 @@ const LanguageDropdown = ({ title }) => {
             type="button"
             onClick={() => handleSelect('zh-hk')}
           >
-            中文
+            繁體中文
           </button>
         </li>
       </ul>
