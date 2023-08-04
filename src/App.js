@@ -7,8 +7,8 @@ import ButtonWithCount from './components/ButtonWithCount';
 import Badge from 'react-bootstrap/Badge';
 import { FormattedMessage, IntlProvider } from 'react-intl';
 import LanguageDropdown from './components/LanguageDropdown';
-import { LocalContext } from './components/wrapper';
-import messages_en_us from './translations/en-us.json';
+import { LocalContext } from './components/Wrapper';
+import messages_en_us from './translations/en-US.json';
 import messages_zh_hk from './translations/zh-hk.json';
 
 export default function App() {

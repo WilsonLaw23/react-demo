@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { IntlProvider } from 'react-intl';
-import messages_en_us from '../translations/en-us.json';
+import messages_en_us from '../translations/en-US.json';
 import messages_zh_hk from '../translations/zh-hk.json';
 
 export const LocalContext = React.createContext();
