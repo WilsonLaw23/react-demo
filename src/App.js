@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import dogimage from '../src/assets/dog-image.png';
+import dogimage from '../src/media/Dog-image.png';
 import ButtonWithCount from './components/ButtonWithCount';
 import Badge from 'react-bootstrap/Badge';
 import LanguageDropdown from './components/dropdownlist';
