@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import 'bootstrap/js/dist/dropdown';
-import { LocalContext } from './Wrapper';
+import { LocalContext } from './wrapper';
 
 const LanguageDropdown = ({ title }) => {
   const { locale, selectLang } = useContext(LocalContext);
