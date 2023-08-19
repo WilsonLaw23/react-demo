@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import dogimage from '../src/media/Dog-image.png';
 import ButtonWithCount from './components/ButtonWithCount';
 import Badge from 'react-bootstrap/Badge';
