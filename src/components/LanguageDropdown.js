@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import 'bootstrap/js/dist/dropdown';
+import { LocalContext } from './wrapper';
+import { FormattedMessage } from 'react-intl'
 
 const LanguageDropdown = ({ title }) => {
-  const [local, setLocal] = useState('en_us');
+  const { locale, selectLang } = useContext(LocalContext);
 
   const handleSelect = (selectedLocal) => {
-    setLocal(selectedLocal);
+    selectLang(selectedLocal);
   };
 
-  const currentLang = `this page is in ${local}`;
+  const currentLang = `this page is in ${locale}`;
 
   return (
     <div className="dropdown">
@@ -19,24 +21,24 @@ const LanguageDropdown = ({ title }) => {
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
-        {local}
+        <FormattedMessage id="localtitle" />
       </button>
 
       <ul className="dropdown-menu">
         <li>
           <button
-            className={`dropdown-item ${local === 'en_us' ? 'active' : ''}`}
+            className={`dropdown-item ${locale.toLocaleLowerCase() === 'en-us' ? 'active' : ''}`}
             type="button"
-            onClick={() => handleSelect('English')}
+            onClick={() => handleSelect('en-us')}
           >
             English
           </button>
         </li>
         <li>
           <button
-            className={`dropdown-item ${local === 'chinese' ? 'active' : ''}`}
+            className={`dropdown-item ${locale.toLocaleLowerCase() === 'zh-hk' ? 'active' : ''}`}
             type="button"
-            onClick={() => handleSelect('繁體中文')}
+            onClick={() => handleSelect('zh-hk')}
           >
             繁體中文
           </button>
