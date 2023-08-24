@@ -9,6 +9,8 @@ import LanguageDropdown from './components/LanguageDropdown';
 import { LocalContext } from './components/wrapper';
 import messages_en_us from './translations/en-US.json';
 import messages_zh_hk from './translations/zh-hk.json';
+import Navbar from './components/Navbar';
+
 
 export default function App() {
   const title = 'Dog Page';
@@ -21,7 +23,7 @@ export default function App() {
   }
 
   return (
-    <IntlProvider messages={lang} locale={locale}>
+    <><Navbar /><IntlProvider messages={lang} locale={locale}>
       <div className="App">
         <h1>
           <FormattedMessage id="title" defaultMessage="Dog Page" />
@@ -65,6 +67,7 @@ export default function App() {
         <LanguageDropdown />
         <ButtonWithCount title={title} />
       </div>
-    </IntlProvider>
+    </IntlProvider></>
   );
 }
+
