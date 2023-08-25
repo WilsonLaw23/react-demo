@@ -10,11 +10,8 @@ const LanguageDropdown = ({ title }) => {
     selectLang(selectedLocal);
   };
 
-  const currentLang = `this page is in ${locale}`;
-
   return (
     <div className="dropdown">
-      <div>{currentLang}</div>
       <button
         className="btn btn-secondary dropdown-toggle"
         type="button"

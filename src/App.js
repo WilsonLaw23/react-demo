@@ -22,8 +22,8 @@ export default function App() {
     lang = messages_zh_hk;
   }
 
-  return (
-    <><Navbar /><IntlProvider messages={lang} locale={locale}>
+  return (<IntlProvider messages={lang} locale={locale}>
+    <Navbar />
       <div className="App">
         <h1>
           <FormattedMessage id="title" defaultMessage="Dog Page" />
@@ -64,10 +64,9 @@ export default function App() {
             <FormattedMessage id="h3" defaultMessage="Punishment" />
           </li>
         </ol>
-        <LanguageDropdown />
         <ButtonWithCount title={title} />
       </div>
-    </IntlProvider></>
+    </IntlProvider>
   );
 }
 
