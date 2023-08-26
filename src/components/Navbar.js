@@ -6,35 +6,36 @@ import { Link } from 'react-router-dom';
 
 function bar() {
   return (
-    
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand to="#brand">Wilson website</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+        <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+        >
+            <Nav.Link href="home">Home</Nav.Link>
+            <Nav.Link href="home-alone">HomeAlone</Nav.Link>
 
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Link to="#home">Home</Link>
-
-            <Nav className="position-absolute top-0 end-0 mt-3 me-3 ">
-            <LanguageDropdown />
-            </Nav>
-            </Nav>
+          </Nav>
+        <LanguageDropdown />
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 }
 
-function CustomLink({ to, children, ...props }){
-  const path =window.location.pathname
+function CustomLink({ to, children, ...props }) {
+  const path = window.location.pathname;
   return (
-    <li className= {path === to ? "active": ""}>
-      <Link to = {to} { ...props }>
+    <li className={path === to ? 'active' : ''}>
+      <Link to={to} {...props}>
         {children}
       </Link>
-      </li>
-  )
+    </li>
+  );
 }
 
 export default bar;

@@ -6,12 +6,11 @@ import ButtonWithCount from '../components/ButtonWithCount';
 import Badge from 'react-bootstrap/Badge';
 import { FormattedMessage, IntlProvider } from 'react-intl';
 
-export default function Home() {
+export default function HomeAlone() {
   const title = 'Dog Page';
 
   return (
-
-      <div className="Home">
+      <div className="HomeAlone">
         <h1>
           <FormattedMessage id="title" defaultMessage="Dog Page" />
         </h1>
@@ -19,7 +18,6 @@ export default function Home() {
           Click here to view more{''}
           <a href="https://www.pexels.com/search/dog/"> dog photos</a>.
         </p>
-        <img src={dogimage} alt="cute dog is taking a rest"></img>
         <p>
           <FormattedMessage id="dlove" defaultMessage="Things dogs love" />
         </p>
