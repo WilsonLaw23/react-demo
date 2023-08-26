@@ -4,15 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Wrapper from './components/wrapper';
+import { BrowserRouter } from 'react-router-dom';
+import { IntlProvider } from 'react-intl';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-
 root.render(
   <React.StrictMode>
+    <BrowserRouter>
     <Wrapper>
+    <IntlProvider>
       <App />
+      </IntlProvider>
       </Wrapper>
+      </BrowserRouter>
   </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function
