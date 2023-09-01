@@ -1,4 +1,5 @@
 import Home from "./pages/Home";
+import About from "./pages/About";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
@@ -11,8 +12,8 @@ function App() {
     <div className='cotainer'>
       <Routes>
         <Route path='home' element={<Home />} />
+        <Route path='about' element={<About />} />
       </Routes>
-
     </div>
   </>
   );

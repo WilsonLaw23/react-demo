@@ -1,10 +1,8 @@
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import dogimage from '../media/Dog-image.png';
 import ButtonWithCount from '../components/ButtonWithCount';
 import Badge from 'react-bootstrap/Badge';
 import { FormattedMessage } from 'react-intl';
-import { Link } from 'react-router-dom';
 
 export default function Home() {
   const title = 'Dog Page'
@@ -15,11 +13,6 @@ export default function Home() {
         <h1>
           <FormattedMessage id="title" defaultMessage="Dog Page" />
         </h1>
-        <p>
-          Click here to view more{''}
-          <Link to ="https://www.pexels.com/search/dog/"> dog photos</Link>.
-        </p>
-        <img src={dogimage} alt="cute dog is taking a rest"></img>
         <p>
           <FormattedMessage id="dlove" defaultMessage="Things dogs love" />
         </p>
