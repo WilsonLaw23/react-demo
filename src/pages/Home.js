@@ -4,22 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import dogimage from '../media/Dog-image.png';
 import ButtonWithCount from '../components/ButtonWithCount';
 import Badge from 'react-bootstrap/Badge';
-import { FormattedMessage, IntlProvider } from 'react-intl';
-import { LocalContext } from '../components/wrapper';
-import messages_en_us from '../translations/en-US.json';
-import messages_zh_hk from '../translations/zh-hk.json';
+import { FormattedMessage } from 'react-intl';
 
 export default function Home() {
-  const title = 'Dog Page';
-  const { locale } = useContext(LocalContext);
-  let lang;
-  if (locale.toLocaleLowerCase() === 'en-us') {
-    lang = messages_en_us;
-  } else {
-    lang = messages_zh_hk;
-  }
+  const title = 'Dog Page'
 
-  return (<IntlProvider messages={lang} locale={locale}>
+  return (
 
       <div className="Home">
         <h1>
@@ -63,7 +53,6 @@ export default function Home() {
         </ol>
         <ButtonWithCount title={title} />
       </div>
-    </IntlProvider>
   );
 }
 

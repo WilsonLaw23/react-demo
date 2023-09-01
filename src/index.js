@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Wrapper from './components/wrapper';
+import Wrapper from './components/LocalContextProvider';
 import { BrowserRouter } from 'react-router-dom';
-import { IntlProvider } from 'react-intl';
+import IntlProviderWrapper from './components/IntlProviderWrapper';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -13,9 +13,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <Wrapper>
-    <IntlProvider>
+    <IntlProviderWrapper>
       <App />
-      </IntlProvider>
+      </IntlProviderWrapper>
       </Wrapper>
       </BrowserRouter>
   </React.StrictMode>

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import 'bootstrap/js/dist/dropdown';
-import { LocalContext } from './wrapper';
+import { LocalContext } from './LocalContextProvider';
 import { FormattedMessage } from 'react-intl'
 
 const LanguageDropdown = ({ title }) => {
