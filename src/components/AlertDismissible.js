@@ -3,7 +3,7 @@ import Alert from 'react-bootstrap/Alert';
 import Button from 'react-bootstrap/Button';
 import { FormattedMessage } from 'react-intl';
 
-function AlertDismissible({}) {
+function AlertDismissible() {
   const [show, setShow] = useState(false);
 
   const handleShow = () => {
