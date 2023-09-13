@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Wrapper from './components/LocalContextProvider';
+import LocalContextProvider from './components/LocalContextProvider';
 import { BrowserRouter } from 'react-router-dom';
 import IntlProviderWrapper from './components/IntlProviderWrapper';
 
@@ -12,11 +12,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <Wrapper>
+    <LocalContextProvider>
     <IntlProviderWrapper>
       <App />
       </IntlProviderWrapper>
-      </Wrapper>
+      </LocalContextProvider>
       </BrowserRouter>
   </React.StrictMode>
 );

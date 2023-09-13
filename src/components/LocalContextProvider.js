@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export const LocalContext = React.createContext();
 
 const local = navigator.language;
-const Wrapper = ({ children }) => {
+const LocalContextProvider = ({ children }) => {
   const [locale, setLocale] = useState(local);
 
   function selectLang(value) {
@@ -17,4 +17,4 @@ const Wrapper = ({ children }) => {
   );
 };
 
-export default Wrapper;
+export default LocalContextProvider;

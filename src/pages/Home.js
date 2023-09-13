@@ -16,15 +16,15 @@ export default function Home() {
           <FormattedMessage id="title" defaultMessage="Dog Page" />
         </h1>
         <p>
-          Click here to view more{''}
-          <Link to ="https://www.pexels.com/search/dog/"> dog photos</Link>.
+        <FormattedMessage id="click"/>
+          <Link to ="https://www.pexels.com/search/dog/"> <FormattedMessage id="dp"/></Link>.
         </p>
         <img src={dogimage} alt="cute dog is taking a rest"></img>
         <p>
           <FormattedMessage id="dlove" defaultMessage="Things dogs love" />
         </p>
         <h1>
-          Example heading <Badge bg="secondary">Hello</Badge>
+          <FormattedMessage id= "Example"/> <Badge bg="secondary"><FormattedMessage id= "hello"/></Badge>
         </h1>
         <ul>
           <li>
