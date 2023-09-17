@@ -1,4 +1,5 @@
 {
+  "localtitle": "English",
   "title" : "Dog Page",
   "dlove" : "Things dogs love",
   "dhate" : "Things dogs hate",
@@ -8,5 +9,15 @@
   "l3" : "Playtime",
   "h1" : "Loud Noise",
   "h2" : "Abandon",
-  "h3" : "Punishment"
+  "h3" : "Punishment",
+  "Home" : "Home",
+  "About" : "About",
+  "click" : "Click here to view more",
+  "brand" : "Wilson website",
+  "Example" : "Example heading",
+  "hello" : "Hello",
+  "Press" : "Press Here",
+  "Count" : "Count:",
+  "AlertHead" : "Oh snap! You got an error!",
+  "SpecialError" : "SpecialError"
 }
