@@ -3,7 +3,7 @@ import About from "./pages/About";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 
 function App() {
   return(
@@ -13,6 +13,7 @@ function App() {
       <Routes>
         <Route path='home' element={<Home />} />
         <Route path='about' element={<About />} />
+        <Route path='*' element={<Navigate to='/home' />} />
       </Routes>
     </div>
   </>
