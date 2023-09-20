@@ -1,23 +1,40 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import '../App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { IntlProvider } from 'react-intl';
 import { LocalContext } from './LocalContextProvider';
-import messages_en_us from '../translations/en-US.json';
-import messages_zh_hk from '../translations/zh-hk.json';
 
 export default function IntlProviderWrapper({children}) {
+  
     const { locale } = useContext(LocalContext);
-    let lang;
-    if (locale.toLocaleLowerCase() === 'en-us') {
-      lang = messages_en_us;
-    } else {
-      lang = messages_zh_hk;
+    const [messages, setMessages] = useState(null);
+  
+    useEffect(() => {
+      async function loadMessages() {
+        const lowercaseLocale = locale.toLocaleLowerCase();
+  
+        try {
+          // Dynamically import the JSON file based on the locale
+          const messages = await import(`../translations/${lowercaseLocale}.json`);
+          setMessages(messages);
+        } catch (error) {
+          // If the JSON file for the specified locale is not found, fall back to 'en-US'
+          const defaultMessages = await import(`../translations/en-US.json`);
+          setMessages(defaultMessages);
+        }
+      }
+  
+      loadMessages();
+    }, [locale]);
+  
+    if (!messages) {
+      return null;
     }
   
-    return (<IntlProvider messages={lang} locale={locale}>
+    return (
+      <IntlProvider messages={messages} locale={locale}>
         {children}
-            </IntlProvider>
-  );
-}
+      </IntlProvider>
+    );
+  }
 

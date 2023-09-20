@@ -13,9 +13,9 @@ function AlertDismissible() {
   if (show) {
     return (
       <Alert variant="danger" onClose={() => setShow(false)} dismissible>
-        <Alert.Heading><FormattedMessage id= 'AlertHead'/></Alert.Heading>
+        <Alert.Heading><FormattedMessage id= 'alerthead'/></Alert.Heading>
         <p>
-          <FormattedMessage id = "SpecialError"/>
+          <FormattedMessage id = "specialerror"/>
         </p>
       </Alert>
     );

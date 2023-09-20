@@ -17,7 +17,7 @@ export default function Home() {
           <FormattedMessage id="dlove" defaultMessage="Things dogs love" />
         </p>
         <h1>
-          Example heading <Badge bg="secondary">Hello</Badge>
+        <FormattedMessage id= "example"/> <Badge bg="secondary"><FormattedMessage id= "hello"/></Badge>
         </h1>
         <ul>
           <li>

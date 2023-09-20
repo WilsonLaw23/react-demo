@@ -10,14 +10,14 @@
   "h1" : "大聲喧嘩",
   "h2" : "拋棄",
   "h3" : "懲罰",
-  "Home" : "主頁",
-  "About" : "關於",
+  "home" : "主頁",
+  "about" : "關於",
   "click" : "點擊此處查看更多",
   "brand" : "威爾遜網站",
-  "Example" : "示例標題",
+  "example" : "示例標題",
   "hello" : "你好",
-  "Press" : "按這裡",
-  "Count" : "數值:",
-  "AlertHead" : "哦，快點！ 你有一個錯誤！",
-  "SpecialError" : "特殊錯誤"
+  "counterButton.title" : "按這裡",
+  "count" : "數值: {count}",
+  "alerthead" : "哦，快點！ 你有一個錯誤！",
+  "specialerror" : "特殊錯誤"
 }

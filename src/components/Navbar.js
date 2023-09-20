@@ -18,10 +18,10 @@ function bar() {
             className="me-auto my-2 my-lg-0"
             navbarScroll>
               <Nav.Link>
-            <Link to="home"><FormattedMessage id="Home"/></Link>
+            <Link to="home"><FormattedMessage id="home"/></Link>
             </Nav.Link>
             <Nav.Link>
-            <Link to="about"><FormattedMessage id="About"/></Link>
+            <Link to="about"><FormattedMessage id="about"/></Link>
             </Nav.Link>
             </Nav>
             <LanguageDropdown />

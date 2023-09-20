@@ -10,14 +10,14 @@
   "h1" : "Loud Noise",
   "h2" : "Abandon",
   "h3" : "Punishment",
-  "Home" : "Home",
-  "About" : "About",
+  "home" : "Home",
+  "about" : "About",
   "click" : "Click here to view more",
   "brand" : "Wilson website",
-  "Example" : "Example heading",
+  "example" : "Example heading",
   "hello" : "Hello",
-  "Press" : "Press Here",
-  "Count" : "Count:",
-  "AlertHead" : "Oh snap! You got an error!",
-  "SpecialError" : "SpecialError"
+  "counterButton.title" : "Press Here",
+  "count" : "Count: {count}",
+  "alerthead" : "Oh snap! You got an error!",
+  "specialerror" : "Special Error"
 }
