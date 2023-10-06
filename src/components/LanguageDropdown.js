@@ -17,6 +17,7 @@ const LanguageDropdown = ({ title }) => {
         type="button"
         data-bs-toggle="dropdown"
         aria-expanded="false"
+        data-testid="languageDropdown"
       >
         <FormattedMessage id="localtitle" />
       </button>
