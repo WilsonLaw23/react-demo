@@ -24,7 +24,7 @@ export default function Home() {
           <FormattedMessage id="dlove" defaultMessage="Things dogs love" />
         </p>
         <h1>
-          <FormattedMessage id= "Example"/> <Badge bg="secondary"><FormattedMessage id= "hello"/></Badge>
+          <FormattedMessage id= "example"/> <Badge bg="secondary"><FormattedMessage id= "hello"/></Badge>
         </h1>
         <ul>
           <li>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import IntlProviderWrapper from './IntlProviderWrapper';
 import LanguageDropdown from './LanguageDropdown';
@@ -18,9 +18,13 @@ const renderWithProviders = (component) => {
   );
 };
 
-test('renders language dropdown with initial active locale', () => {
+test('renders language dropdown with initial active locale', async () => {
   renderWithProviders(<LanguageDropdown />);
 
-  const dropdownButton = screen.getByTestId('Dropdown');
-  expect(dropdownButton).toHaveTextContent('English');
+  await waitFor( () => { 
+    const dropdownButton = screen.getByTestId('languageDropdown');
+    expect(dropdownButton).toHaveTextContent('English');
+
+  });
+
 });

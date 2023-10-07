@@ -11,8 +11,9 @@ function App() {
   <Navbar />
     <div className='cotainer'>
       <Routes>
-        <Route path='home' element={<Home />} />
-        <Route path='about' element={<About />} />
+        <Route path='/home' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/' element={<Home/>} />
       </Routes>
     </div>
   </>

@@ -13,9 +13,9 @@ const ButtonWithCount = ({ title }) => {
   return (
     <div>
       <Button variant="danger" onClick={handleButtonClick}>
-        <FormattedMessage id = "Press"/>
+        <FormattedMessage id = "counterButton.title"/>
       </Button>
-      <p><FormattedMessage id='Count'/> {count}</p>
+      <p><FormattedMessage id='count' values={{count}}/></p>
       <AlertDismissible />
     </div>
   );
