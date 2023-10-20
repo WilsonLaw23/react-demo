@@ -25,5 +25,6 @@
   "activity": "活動",
   "type": "類型",
   "participants": "參加人數",
-  "price": "價格"
+  "price": "價格",
+  "remove": "移除"
 }
