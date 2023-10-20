@@ -1,5 +1,6 @@
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Whattodo from "./pages/Whattodo";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
@@ -14,6 +15,7 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/' element={<Home/>} />
+        <Route path='/whattodo' element={<Whattodo/>} />
       </Routes>
     </div>
   </>
