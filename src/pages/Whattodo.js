@@ -36,7 +36,7 @@ export default function Whattodo() {
             <th><FormattedMessage id="type" /></th>
             <th><FormattedMessage id="participants" /></th>
             <th><FormattedMessage id="price" /></th>
-            <th><FormattedMessage id="remove" /></th>
+            <th><FormattedMessage id="delete" /></th>
           </tr>
         </thead>
         <tbody>
@@ -46,7 +46,7 @@ export default function Whattodo() {
               <td>{activity.type}</td>
               <td>{activity.participants}</td>
               <td>{activity.price}</td>
-              <td><button onClick={() => handleDelete(activity)}><FormattedMessage id="remove" /></button></td>
+              <td><button onClick={() => handleDelete(activity)}><FormattedMessage id="delete" /></button></td>
             </tr>
           ))}
         </tbody>

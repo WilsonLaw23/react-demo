@@ -26,5 +26,5 @@
   "type": "type",
   "participants": "participants",
   "price": "price",
-  "remove": "remove"
+  "delete": "delete"
 }
