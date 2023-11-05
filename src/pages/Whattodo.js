@@ -21,6 +21,11 @@ export default function Whattodo() {
       console.error('Error fetching data:', error);
     }
   };
+  
+  function handleDelete(activity) {
+    const newlist = Task.filter((list) => list.activity !== activity.activity);
+    setTask(newlist);
+  }
 
   return (
     <Table>
@@ -31,6 +36,7 @@ export default function Whattodo() {
             <th><FormattedMessage id="type" /></th>
             <th><FormattedMessage id="participants" /></th>
             <th><FormattedMessage id="price" /></th>
+            <th><FormattedMessage id="delete" /></th>
           </tr>
         </thead>
         <tbody>
@@ -40,6 +46,7 @@ export default function Whattodo() {
               <td>{activity.type}</td>
               <td>{activity.participants}</td>
               <td>{activity.price}</td>
+              <td><button onClick={() => handleDelete(activity)}><FormattedMessage id="delete" /></button></td>
             </tr>
           ))}
         </tbody>
