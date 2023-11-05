@@ -32,7 +32,7 @@ export default function Whattodo() {
         <thead> 
         <button onClick={fetchData}><FormattedMessage id="boring click" /></button>
           <tr>
-            <th><FormattedMessage id="activity " /></th>
+            <th><FormattedMessage id="activity" /></th>
             <th><FormattedMessage id="type" /></th>
             <th><FormattedMessage id="participants" /></th>
             <th><FormattedMessage id="price" /></th>

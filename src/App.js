@@ -10,7 +10,7 @@ function App() {
   return(
     <>
   <Navbar />
-    <div className='cotainer'>
+    <div className='cotainer' class = "App">
       <Routes>
         <Route path='/home' element={<Home />} />
         <Route path='/about' element={<About />} />
