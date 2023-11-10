@@ -22,5 +22,8 @@
   "alerthead" : "Oh snap! You got an error!",
   "specialerror" : "Special Error",
   "boring.click": "Click me if you bored",
-  "loading": "loading"
+  "activity": "activity",
+  "type": "type",
+  "participants": "participants",
+  "price": "price"
 }

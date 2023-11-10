@@ -22,5 +22,8 @@
   "alerthead" : "哦，快點！ 你有一個錯誤！",
   "specialerror" : "特殊錯誤",
   "boring.click": "點我解悶",
-  "loading": "載入中"
+  "activity": "活動",
+  "type": "類型",
+  "participants": "參加人數",
+  "price": "價格"
 }

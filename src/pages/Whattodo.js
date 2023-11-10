@@ -1,33 +1,32 @@
-import {useState, useEffect} from "react";
-import { FormattedMessage } from "react-intl";
+import { Table } from "react-bootstrap";
+import { FormattedMessage } from 'react-intl';
+import getActivity from "../Api/BoardApi";
 
 export default function Whattodo() {
-    const [whatTodo, setWhatTodo] = useState(null);
+  const { WhatTodoList, handleOnClick } = getActivity();
 
-    useEffect(() => {
-      fetchData();
-    }, []);
-  
-    const fetchData = async () => {
-      try {
-        const response = await fetch('http://www.boredapi.com/api/activity/');
-        const data = await response.json();
-        setWhatTodo(data);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-  
-    return (
-      <div>
-        {whatTodo ? (
-          <div>
-            <button onClick={fetchData}><FormattedMessage id="boring.click" /></button>
-            <p>{JSON.stringify(whatTodo, null, 2)}</p>
-          </div>
-        ) : (
-          <p><FormattedMessage id="loading" /></p>
-        )}
-      </div>
-    )
+
+  return (
+    <Table>
+        <thead> 
+        <button onClick={handleOnClick}><FormattedMessage id="boring.click" /></button>
+          <tr>
+            <th><FormattedMessage id="activity" /></th>
+            <th><FormattedMessage id="type" /></th>
+            <th><FormattedMessage id="participants" /></th>
+            <th><FormattedMessage id="price" /></th>
+          </tr>
+        </thead>
+        <tbody>
+          {WhatTodoList.map((activity) => (
+            <tr>
+              <td>{activity.activity}</td>
+              <td>{activity.type}</td>
+              <td>{activity.participants}</td>
+              <td>{activity.price}</td>
+            </tr>
+          ))}
+        </tbody>
+    </Table>
+  );
 }
