@@ -12,6 +12,7 @@
   "h3" : "懲罰",
   "home" : "主頁",
   "about" : "關於",
+  "whatTodo.title": "做咩啊",
   "click" : "點擊此處查看更多",
   "brand" : "威爾遜網站",
   "example" : "示例標題",
@@ -19,5 +20,10 @@
   "counterButton.title" : "按這裡",
   "count" : "數值: {count}",
   "alerthead" : "哦，快點！ 你有一個錯誤！",
-  "specialerror" : "特殊錯誤"
+  "specialerror" : "特殊錯誤",
+  "boring.click": "點我解悶",
+  "activity": "活動",
+  "type": "類型",
+  "participants": "參加人數",
+  "price": "價格"
 }

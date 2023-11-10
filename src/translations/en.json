@@ -12,6 +12,7 @@
   "h3" : "Punishment",
   "home" : "Home",
   "about" : "About",
+  "whatTodo.title": "What To Do",
   "click" : "Click here to view more",
   "brand" : "Wilson website",
   "example" : "Example heading",
@@ -19,5 +20,10 @@
   "counterButton.title" : "Press Here",
   "count" : "Count: {count}",
   "alerthead" : "Oh snap! You got an error!",
-  "specialerror" : "Special Error"
+  "specialerror" : "Special Error",
+  "boring.click": "Click me if you bored",
+  "activity": "activity",
+  "type": "type",
+  "participants": "participants",
+  "price": "price"
 }

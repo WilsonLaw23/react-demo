@@ -23,6 +23,9 @@ function bar() {
             <Nav.Link>
             <Link to="about"><FormattedMessage id="about"/></Link>
             </Nav.Link>
+            <Nav.Link>
+            <Link to="What_to_do"><FormattedMessage id="whatTodo.title"/></Link>
+            </Nav.Link>
             </Nav>
             <LanguageDropdown />
         </Navbar.Collapse>
